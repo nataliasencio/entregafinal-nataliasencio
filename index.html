@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkeo libreria sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Paletas Heladas</title>
+    <!-- linkeo del css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Tienda de Paletas Heladas</h1>
+   <div class="container">
+    <!-- input para poner los valores paletas y boton agregar con sus id para conectarlos con JS -->
+    <h2>Agregar Paletas</h2>
+    <label for="nombre">Nombre </label>
+    <input type="text" id="nombre">
+
+    <label for="sabor">Sabor </label>
+    <input type="text" id="sabor">
+
+    <label for="precio">Precio</label>
+    <input type="number" id="precio">
+
+    <label for="stock">cantidad en stock</label>
+    <input type="number" id="stock">
+    
+    <button id="agregar">Agregar</button>
+    <!-- boton para traer las paletas guardadas en el local storage e imprimirlas en el DOM -->
+    <button id="traerPaletas">traer agregadas</button>
+    <!-- div con id para mostrar el valor de los input(agregar paleta y traer agregadas) en el DOM para eliminar el console-->
+    <div id="resultadoContenedor1"></div>
+   </div>
+
+
+     <div class="container1">
+   <!-- boton y div para el catálogo -->
+   <h2>Consultar Catálogo</h2>
+   <button id="Catalogo">Catalogo</button>
+   <div id="resultadoContenedor2"></div>
+  <!-- filtrar catálogo -->
+   <h2>Buscar paletas por precio</h2>
+   <!-- input  y boton para filtrar-->
+   <input type="number" id="filtrar" placeholder="Ingrese el precio">
+   <button id="filtrarC">Filtrar</button>
+   <!-- div para mostrar las paletas con el precio ingresado en el input -->
+   <div id="resultadoContenedor3"></div>
+     </div>
+ 
+
+<div class="container2">
+   <!-- clientes de la tienda traidos por api -->
+   <h2>Clientes de la tienda</h2>
+   <div id="resultadoContenedor4"></div>
+   <button id="infoClientes">Info clientes</button>
+</div>
+  
+
+
+     
+
+    <!-- linkeo de html con js -->
+<script src="main.js"></script>
+</body>
+</html>

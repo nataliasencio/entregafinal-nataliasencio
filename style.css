@@ -1,0 +1,58 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+body{
+    background-color: rgb(119, 176, 176);
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+
+    /* espacio interno de la etiqueta */
+    padding: 20px 30px 100px 40px;
+
+    /* espacio externo de la etiqueta*/
+    margin-top: 50px;
+}
+h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    padding: 20px 30px 100px 40px;
+}
+
+.container1{
+    padding: 20px 30px 100px 40px;
+}
+
+.container2{
+    padding: 20px 30px 100px 40px;
+}
+
+button{
+    padding: 10px 20px; 
+    margin: 10px;
+    border-radius: 5px; 
+    background-color: rgb(171, 199, 142);
+   font-size: 18px;
+   border: none;
+   cursor: pointer; /* al pasar el mouse por el boton se ve la */
+   box-shadow: 2px 2px 5px black;
+
+   transition: all 0.3 ease;/* esto sirve para el hover del botón */
+   }
+
+   /* al pasar el mouse por el boton este cambia de color */
+   button:hover{
+       background-color: rgb(206, 216, 224);
+   }
