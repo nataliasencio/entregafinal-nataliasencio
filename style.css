@@ -1,18 +1,24 @@
 /* reset */
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
- }
-
-
-body{
-    background-color: rgb(119, 176, 176);
-}
-html{
-    font-family: 'Roboto', sans-serif;
-}
+    box-sizing: border-box; }
+  
+  /* estilos generales*/
+  html {
+    font-family: Arial, Helvetica, sans-serif; }
+    html body {
+      background-color:  #9bc7d9; }
+      html body h1 {
+        text-align: center;
+        margin: 10px; }
+      html body h2 {
+        text-align: center; }
+      html body main {
+        background-color: #9bc7d9; }
+      html body footer {
+        padding: 20px;
+        text-align: center; }
 h1{
     text-align: center;
 
@@ -27,26 +33,48 @@ h2{
     margin-top: 20px;
 }
 
+header{
+    background-color: whitesmoke
+}
+footer{
+    background-color: whitesmoke
+}
+
 .container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-right:auto;
+    margin-left:auto;
     padding: 20px 30px 100px 40px;
 }
 
 .container1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-right:auto;
+    margin-left:auto;
     padding: 20px 30px 100px 40px;
 }
 
 .container2{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-right:auto;
+    margin-left:auto;
     padding: 20px 30px 100px 40px;
 }
 
 button{
-    padding: 10px 20px; 
     margin: 10px;
+    padding: 10px 20px; 
     border-radius: 5px; 
     background-color: rgb(171, 199, 142);
    font-size: 18px;
    border: none;
-   cursor: pointer; /* al pasar el mouse por el boton se ve la */
+   cursor: pointer; /* al pasar el mouse por el boton se ve la mano*/
    box-shadow: 2px 2px 5px black;
 
    transition: all 0.3 ease;/* esto sirve para el hover del botón */
