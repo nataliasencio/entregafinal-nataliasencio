@@ -169,6 +169,8 @@ function mostrarPaletasCatalogo(){
             resultadoContenedor3.innerHTML += `nombre: ${elemento.nombre} , sabor:${elemento.sabor} , precio: ${elemento.precio} , stock: ${elemento.stock}<br/>`
         })
 
+        setTimeout( ()=> {Swal.fire("Ya puedes ver los resultados de tu busqueda");}, 1000 )
+
     }else{Swal.fire("No hay paletas con ese precio");}
     
     }
